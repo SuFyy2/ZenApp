@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bluebg1"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/Blue2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bluebg2"
+        android:layout_width="325dp"
+        android:layout_height="0dp"
+        android:background="@color/Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/bluebg1"
+        app:layout_constraintEnd_toEndOf="@+id/bluebg1"
+        app:layout_constraintStart_toStartOf="@+id/bluebg1"
+        app:layout_constraintTop_toTopOf="@+id/bluebg1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="sans-serif"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bluebg1"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/profile" />
+
+    <TextView
+        android:id="@+id/yoga"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/options_background"
+        app:layout_constraintBottom_toBottomOf="@+id/motivation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/motivation" />
+
+    <ImageButton
+        android:id="@+id/yoga_button"
+        android:layout_width="193dp"
+        android:layout_height="118dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/yoga"
+        app:layout_constraintEnd_toEndOf="@+id/yoga"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/yoga"
+        app:layout_constraintTop_toTopOf="@+id/yoga"
+        app:srcCompat="@drawable/yoga" />
+
+    <TextView
+        android:id="@+id/yoga_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Yoga"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/yoga"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/yoga"
+        app:layout_constraintTop_toBottomOf="@+id/yoga"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/motivation"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="272dp"
+        android:background="@drawable/options_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yoga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluebg1" />
+
+    <ImageButton
+        android:id="@+id/motivation_button"
+        android:layout_width="143dp"
+        android:layout_height="102dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/motivation"
+        app:layout_constraintEnd_toEndOf="@+id/motivation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/motivation"
+        app:layout_constraintTop_toTopOf="@+id/motivation"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@drawable/motivation" />
+
+    <TextView
+        android:id="@+id/motivation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motivation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motivation"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/motivation"
+        app:layout_constraintTop_toBottomOf="@+id/motivation"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/bluebg3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivation_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/infobutton"
+        android:layout_width="73dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="139dp"
+        android:layout_height="144dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="@+id/bluebg2"
+        app:layout_constraintStart_toStartOf="@+id/bluebg2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671"
+        app:srcCompat="@drawable/profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
